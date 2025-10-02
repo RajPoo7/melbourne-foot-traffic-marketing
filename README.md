@@ -1,39 +1,21 @@
-# Melbourne Foot‑Traffic → Marketing & Data Analytics (AU‑standard)
+# Melbourne Foot-Traffic → Marketing & Analytics
 
-Author: **Poojith Raj**  
-Last updated: 2025-09-28
+An end-to-end, reproducible project that turns City of Melbourne pedestrian counts + weather + ABS demographics into a compact **marketing dashboard and playbook** for running a CBD pop-up (e.g., a coffee cart).
 
-An end‑to‑end, portfolio‑ready project that turns **City of Melbourne pedestrian counts + weather + ABS demographics**
-into an **AU‑compliant marketing dashboard** and **playbook** for a hypothetical CBD pop‑up (e.g., coffee cart).
+<img alt="Dashboard overview" src="web/dashboard_overview.png" width="900">
 
-## Highlights
-- Reproducible data pipeline (Python + notebooks)
-- Looker Studio dashboard (traffic × weather × events)
-- Marketing ops: content calendar, UTM plan, GTM event tagging
-- AU compliance checklist (APPs, Spam Act, AANA)
+## What this ships
+- A clean, notebook-driven data pipeline (Python, geo-friendly environment)
+- A Looker Studio dashboard (traffic × time × weather)
+- A small marketing kit: content calendar, UTM builder, lightweight landing page
+- A short compliance checklist (APPs, Spam Act, AANA)
 
 ## Quickstart
 ```bash
-# Option A: Conda (recommended for Geo stack)
+# Option A (recommended for geo stack)
 conda env create -f environment.yml
 conda activate melb_foot_traffic
 
-# Option B: venv + pip (lightweight; geo libs may be harder to install)
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+# Option B (venv + pip)
+python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-```
-
-Then open Jupyter and follow the notebooks in order (`01_...` to `05_...`).
-
-## Repo layout
-```
-data/                  # raw/interim/processed (raw is gitignored)
-notebooks/             # 01..05 project notebooks
-analytics/looker_studio_datasources/
-marketing/             # calendar, UTMs, creative
-ops/                   # compliance, SOPs, risk register
-web/                   # static landing page + GTM instructions
-scripts/               # CLI helpers (download/merge)
-tests/                 # basic schema tests
-```
