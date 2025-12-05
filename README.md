@@ -41,7 +41,6 @@ This repository ships:
   - traffic story by time and place,  
   - spots where rain is actually helpful,  
   - simple language so a non-technical stakeholder can follow the story.
-- A short compliance checklist (privacy, spam rules, basic advertising ethics).
 
 ---
 
